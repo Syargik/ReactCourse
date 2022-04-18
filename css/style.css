@@ -1187,8 +1187,14 @@ h4 {
     margin-bottom: 30px;
 }
 
-.licence__container h1,
-h2 {
+.licence__container h1, h2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    font-family: ProximaNova;
+}
+
+.licence__container a {
     font-size: 14px;
     font-weight: 400;
     line-height: 18.9px;
