@@ -1,4 +1,6 @@
 import React from 'react'
+import right from '../img/right.svg'
+import left from '../img/left.svg'
 
 export default function Main() {
     return (
@@ -7,13 +9,9 @@ export default function Main() {
                 <div className="main__img">
                     <div className="main__text">
                         <div className="text__decoration">
-                            <svg className="left">
-                                <use xlinkHref="#left"></use>
-                            </svg>
+                            <img src={left} alt={left} />
                             <h1>Укрепление здоровья</h1>
-                            <svg className="right">
-                                <use xlinkHref="#right"></use>
-                            </svg>
+                            <img src={right} alt={right} />
                         </div>
                         <h2>Акватерапия
                             RitmStyle</h2>

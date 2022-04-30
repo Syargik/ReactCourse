@@ -1,17 +1,15 @@
 import React from 'react'
+import right from '../img/right_color.svg'
+import left from '../img/left_color.svg'
 
 export default function About() {
     return (
         <div className="about">
             <div className="about__container _container">
                 <div className="text__decoration">
-                    <svg className="left">
-                        <use xlinkHref="#left"></use>
-                    </svg>
+                    <img src={left} alt={left}/>
                     <h1>Об RitmStyle</h1>
-                    <svg className="right">
-                        <use xlinkHref="#right"></use>
-                    </svg>
+                    <img src={right} alt={right} />
                 </div>
                 <div className="about__content">
                     <div className="about__item">

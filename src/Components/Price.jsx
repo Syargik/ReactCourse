@@ -1,26 +1,22 @@
 import React from 'react'
+import right from '../img/right_color.svg'
+import left from '../img/left_color.svg'
 
 export default function Price() {
     return (
         <div className="price">
             <div className="price__container _container">
                 <div className="text__decoration">
-                    <svg className="left">
-                        <use xlinkHref="#left"></use>
-                    </svg>
+                    <img src={left} alt={left} />
                     <h1>Стоимость сеансов</h1>
-                    <svg className="right">
-                        <use xlinkHref="#right"></use>
-                    </svg>
+                    <img src={right} alt={right} />
                 </div>
                 <div className="prices">
                     <div className="prices__text">
                         <div className="prices__item">
                             <div className="price__item">
                                 <div className="price__left">
-                                    <svg className="left">
-                                        <use xlinkHref="#left"></use>
-                                    </svg>
+                                <img src={left} alt={left}/>
                                     <h1>RitmStyle с погружением</h1>
                                 </div>
                                 <div className="price__right">
@@ -29,9 +25,7 @@ export default function Price() {
                             </div>
                             <div className="price__item">
                                 <div className="price__left">
-                                    <svg className="left">
-                                        <use xlinkHref="#left"></use>
-                                    </svg>
+                                <img src={left} alt={left}/>
                                     <h1>Абонемент на RitmStyle</h1>
                                 </div>
                                 <div className="price__right">
@@ -40,9 +34,7 @@ export default function Price() {
                             </div>
                             <div className="price__item">
                                 <div className="price__left">
-                                    <svg className="left">
-                                        <use xlinkHref="#left"></use>
-                                    </svg>
+                                <img src={left} alt={left}/>
                                     <h1>RitmStyle для пар</h1>
                                 </div>
                                 <div className="price__right">
@@ -51,9 +43,7 @@ export default function Price() {
                             </div>
                             <div className="price__item">
                                 <div className="price__left">
-                                    <svg className="left">
-                                        <use xlinkHref="#left"></use>
-                                    </svg>
+                                <img src={left} alt={left}/>
                                     <h1>RitmStyle для беременных</h1>
                                 </div>
                                 <div className="price__right">
@@ -62,9 +52,7 @@ export default function Price() {
                             </div>
                             <div className="price__item">
                                 <div className="price__left">
-                                    <svg className="left">
-                                        <use xlinkHref="#left"></use>
-                                    </svg>
+                                <img src={left} alt={left}/>
                                     <h1>RitmStyle + фотосессия</h1>
                                 </div>
                                 <div className="price__right">
