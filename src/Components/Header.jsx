@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../img/logo.svg'
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
@@ -7,7 +8,7 @@ export default function Header() {
             <div className="header__container _container">
                 <div className="header__body">
                     <a href="*" className="header__logo">
-                        <img src={logo} alt={logo} className="logo"/>
+                        <img src={logo} alt={logo} className="logo" />
                     </a>
                     <nav className="header__menu">
                         <ul className="menu__list">
@@ -15,7 +16,9 @@ export default function Header() {
                                 <a href="*" className="menu__link">Главная</a>
                             </li>
                             <li className="menu__item">
-                                <a href="*" className="menu__link">Сеансы</a>
+                                <Link to = '/Biography'>
+                                    <a href="*" className="menu__link">Биография</a>
+                                </Link>
                             </li>
                             <li className="menu__item">
                                 <a href="*" className="menu__link">Отзывы</a>

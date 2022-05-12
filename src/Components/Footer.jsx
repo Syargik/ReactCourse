@@ -1,4 +1,7 @@
 import React from 'react'
+import location from '../img/carbon_location-filled.png'
+import metro from '../img/metro.png'
+import calendar from '../img/bi_calendar-week-fill.png'
 
 export default function Footer() {
     return (
@@ -20,15 +23,15 @@ export default function Footer() {
                         <h1>Бассейн WorkclassName</h1>
                         <div className="place">
                             <div className="place__location">
-                                <img src="./img/carbon_location-filled.png" alt="" />
+                                <img src={location} alt="" />
                                 <h2>Невский 140</h2>
                             </div>
                             <div className="place__metro">
-                                <img src="./img/metro.png" alt="" />
+                                <img src={metro} alt="" />
                                 <h3>м. Спасская</h3>
                             </div>
                             <div className="place__date">
-                                <img src="./img/bi_calendar-week-fill.png" alt="" />
+                                <img src={calendar} alt="" />
                                 <h4>Запись по договоренности</h4>
                             </div>
                         </div>
@@ -38,15 +41,15 @@ export default function Footer() {
                         <h1>Бассейн WorkclassName</h1>
                         <div className="place">
                             <div className="place__location">
-                                <img src="./img/carbon_location-filled.png" alt="" />
+                                <img src={location} alt="" />
                                 <h2>Невский 140</h2>
                             </div>
                             <div className="place__metro">
-                                <img src="./img/metro.png" alt="" />
+                                <img src={metro} alt="" />
                                 <h3>м. Спасская</h3>
                             </div>
                             <div className="place__date">
-                                <img src="./img/bi_calendar-week-fill.png" alt="" />
+                                <img src={calendar} alt="" />
                                 <h4>Запись по договоренности</h4>
                             </div>
                         </div>

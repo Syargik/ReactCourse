@@ -342,7 +342,7 @@ body {
   align-items: center;
   text-align: center;
   height: 600px;
-  background: url(./img/main_img.jpg) center no-repeat;
+  background: url(../img/main_img.jpg) center no-repeat;
   background-size: cover;
   margin-top: 50px;
   border-radius: 10px;
@@ -739,7 +739,7 @@ body {
 }
 
 .about__image {
-  background: url(./img/about_img.jpg) center no-repeat;
+  background: url(../img/about_img.jpg) center no-repeat;
   height: 365px;
   width: 526px;
   border-radius: 10px;
@@ -938,7 +938,7 @@ body {
 }
 
 .price__image {
-  background: url(./img/price_img.jpg) center no-repeat;
+  background: url(../img/price_img.jpg) center no-repeat;
   width: 526px;
   height: 396px;
   border-radius: 10px;
