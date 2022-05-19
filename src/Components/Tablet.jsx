@@ -26,73 +26,85 @@ export default class Tablet extends Component {
 
 
     addPerson() {
-        this.state.biographies.push({
-            info: {
-                name: this.state.name,
-                surname: this.state.surname
-            },
-            events: {
-                birthday: this.state.birthday,
-                death: this.state.death
-            }
-        })
-        this.forceUpdate()
+        this.setState((state) => ({
+            biographies: [
+                ...state.biographies,
+                {
+                    info: {
+                        name: this.state.name,
+                        surname: this.state.surname
+                    },
+                    events: {
+                        birthday: this.state.birthday,
+                        death: this.state.death
+                    }
+                }
+            ]
+        }))
     }
 
     deletePerson() {
-        this.state.biographies.pop()
-        this.forceUpdate()
+        this.setState((state) => ({
+            biographies: state.biographies.slice(0, -1)
+        }))
     }
 
-    deleteElement (index) {
-        this.state.biographies.splice(index, 1)
-        this.forceUpdate()
+    deleteElement(index) {
+        this.setState((state) => {
+            let array = [...state.biographies]
+            array.splice(index, 1)
+            return { biographies: array }
+        })
     }
 
     sortByName() {
-        this.state.biographies.sort((a, b) => (a.info.name.toLowerCase() > b.info.name.toLowerCase()) ? 1 : -1)
-        this.forceUpdate()
+        this.setState((state) => ({
+            biographies: [...state.biographies].sort((a, b) => (a.info.name.toLowerCase() > b.info.name.toLowerCase()) ? 1 : -1)
+        }))
     }
 
     sortBySurname() {
-        this.state.biographies.sort((a, b) => (a.info.surname.toLowerCase() > b.info.surname.toLowerCase()) ? 1 : -1)
-        this.forceUpdate()
+        this.setState((state) => ({
+            biographies: [...state.biographies].sort((a, b) => (a.info.surname.toLowerCase() > b.info.surname.toLowerCase()) ? 1 : -1)
+        }))
     }
 
     mySortByBirth() {
-        const arr = this.state.biographies;
-        for (var i = 0, endI = arr.length - 1; i < endI; i++) {
-            let wasSwap = false;
-            for (var j = 0, endJ = endI - i; j < endJ; j++) {
-                if (+arr[j].events.birthday > +arr[j + 1].events.birthday) {
-                    let swap = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = swap;
-                    wasSwap = true;
+        this.setState((state) => {
+            const arr = [...state.biographies];
+            for (var i = 0, endI = arr.length - 1; i < endI; i++) {
+                let wasSwap = false;
+                for (var j = 0, endJ = endI - i; j < endJ; j++) {
+                    if (+arr[j].events.birthday > +arr[j + 1].events.birthday) {
+                        let swap = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = swap;
+                        wasSwap = true;
+                    }
                 }
+                if (!wasSwap) break;
             }
-            if (!wasSwap) break;
-        }
-        this.forceUpdate()
-        return arr;
+            return {biographies: arr};
+        })
     }
 
     mySortByDeath() {
-        const arr = this.state.biographies;
-        for (var i = 0, endI = arr.length - 1; i < endI; i++) {
-            let wasSwap = false;
-            for (var j = 0, endJ = endI - i; j < endJ; j++) {
-                if (+arr[j].events.death > +arr[j + 1].events.death) {
-                    let swap = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = swap;
-                    wasSwap = true;
+        this.setState((state) => {
+            const arr = [...state.biographies];
+            for (var i = 0, endI = arr.length - 1; i < endI; i++) {
+                let wasSwap = false;
+                for (var j = 0, endJ = endI - i; j < endJ; j++) {
+                    if (+arr[j].events.death > +arr[j + 1].events.death) {
+                        let swap = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = swap;
+                        wasSwap = true;
+                    }
                 }
+                if (!wasSwap) break;
             }
-            if (!wasSwap) break;
-        }
-        this.forceUpdate()
-        return arr;
+            return {biographies: arr};
+        })
     }
 
     render() {
