@@ -1,46 +1,47 @@
 import React from 'react'
 import logo from '../img/logo.svg'
 import { Link } from 'react-router-dom';
+import styles from './Home.module.css';
 
 export default function Header() {
     return (
-        <header className="header">
-            <div className="header__container _container">
-                <div className="header__body">
-                    <a href="*" className="header__logo">
-                        <img src={logo} alt={logo} className="logo" />
+        <header className={styles.header}>
+            <div className={styles.header__container}>
+                <div className={styles.header__body}>
+                    <a href="*" className={styles.header__logo}>
+                        <img src={logo} alt={logo} className={styles.logo} />
                     </a>
-                    <nav className="header__menu">
-                        <ul className="menu__list">
-                            <li className="menu__item">
-                                <a href="*" className="menu__link">Главная</a>
+                    <nav className={styles.header__menu}>
+                        <ul className={styles.menu__list}>
+                            <li className={styles.menu__item}>
+                                <a href="*" className={styles.menu__link}>Главная</a>
                             </li>
-                            <li className="menu__item">
-                                <Link to = '/Biography'>
-                                    <a href="*" className="menu__link">Биография</a>
+                            <li className={styles.menu__item}>
+                                <Link to='/Biography' className={styles.menu__link}>
+                                    Биография
                                 </Link>
                             </li>
-                            <li className="menu__item">
-                                <a href="*" className="menu__link">Отзывы</a>
+                            <li className={styles.menu__item}>
+                                <a href="*" className={styles.menu__link}>Отзывы</a>
                             </li>
-                            <li className="menu__item">
-                                <a href="*" className="menu__link">Контакты</a>
+                            <li className={styles.menu__item}>
+                                <a href="*" className={styles.menu__link}>Контакты</a>
                             </li>
-                            <li className="menu__item">
-                                <a href="*" className="menu__link">Новости</a>
+                            <li className={styles.menu__item}>
+                                <a href="*" className={styles.menu__link}>Новости</a>
                             </li>
-                            <li className="menu__item">
-                                <a href="*" className="menu__link">Обо мне</a>
+                            <li className={styles.menu__item}>
+                                <a href="*" className={styles.menu__link}>Обо мне</a>
                             </li>
-                            <li className="menu__item">
-                                <a href="*" className="menu__link">Блог</a>
+                            <li className={styles.menu__item}>
+                                <a href="*" className={styles.menu__link}>Блог</a>
                             </li>
                         </ul>
                     </nav>
-                    <button className="button">
+                    <button className={styles.button}>
                         Записаться на сеанс
                     </button>
-                    <div className="header__burger">
+                    <div className={styles.header__burger}>
                         <span></span>
                     </div>
                 </div>

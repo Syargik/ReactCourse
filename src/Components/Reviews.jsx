@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import right from '../img/right_color.svg'
 import left from '../img/left_color.svg'
+import styles from './Home.module.css';
 
 export default class Reviews extends Component {
     constructor() {
@@ -19,45 +20,45 @@ export default class Reviews extends Component {
     }
     render() {
         return (
-            <div className="reviews">
-                <div className="reviews__container _container">
-                    <div className="text__decoration">
+            <div className={styles.reviews}>
+                <div className={styles.reviews__container}>
+                    <div className={styles.text__decoration}>
                         <img src={left} alt={left} />
                         <h1>Отзывы</h1>
                         <img src={right} alt={right} />
                     </div>
-                    <div className="slider">
-                        <div className="slider__container">
-                            <div className="slider__wrapper">
-                                <div className="slider__items">
-                                    <div className="slider__item">
-                                        <div className="review">
-                                            <h1 className="review__name">{this.state.names[1]}</h1>
-                                            <h2 className="review__text">{this.state.reviews[1]}</h2>
+                        <div className={styles.slider}>
+                            <div className={styles.slider__container}>
+                                <div className={styles.slider__wrapper}>
+                                    <div className={styles.slider__items}>
+                                        <div className={styles.slider__item}>
+                                            <div className={styles.review}>
+                                                <h1 className={styles.review__name}>{this.state.names[1]}</h1>
+                                                <h2 className={styles.review__text}>{this.state.reviews[1]}</h2>
                                         </div>
                                     </div>
-                                    <div className="slider__item">
-                                        <div className="review">
-                                            <h1 className="review__name">{this.state.names[2]}</h1>
-                                            <h2 className="review__text">{this.state.reviews[1]}</h2>
+                                    <div className={styles.slider__item}>
+                                        <div className={styles.review}>
+                                            <h1 className={styles.review__name}>{this.state.names[2]}</h1>
+                                            <h2 className={styles.review__text}>{this.state.reviews[1]}</h2>
                                         </div>
                                     </div>
-                                    <div className="slider__item">
-                                        <div className="review">
-                                            <h1 className="review__name">{this.state.names[3]}</h1>
-                                            <h2 className="review__text">{this.state.reviews[1]}</h2>
+                                    <div className={styles.slider__item}>
+                                        <div className={styles.review}>
+                                            <h1 className={styles.review__name}>{this.state.names[3]}</h1>
+                                            <h2 className={styles.review__text}>{this.state.reviews[1]}</h2>
                                         </div>
                                     </div>
-                                    <div className="slider__item">
-                                        <div className="review">
-                                            <h1 className="review__name">{this.state.names[4]}</h1>
-                                            <h2 className="review__text">{this.state.reviews[1]}</h2>
+                                    <div className={styles.slider__item}>
+                                        <div className={styles.review}>
+                                            <h1 className={styles.review__name}>{this.state.names[4]}</h1>
+                                            <h2 className={styles.review__text}>{this.state.reviews[1]}</h2>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <ol className="slider__indicators">
+                        <ol className={styles.slider__indicators}>
                             <li data-slide-to="0"></li>
                             <li data-slide-to="1"></li>
                             <li data-slide-to="2"></li>

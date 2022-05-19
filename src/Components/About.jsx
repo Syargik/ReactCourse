@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import right from '../img/right_color.svg'
 import left from '../img/left_color.svg'
+import styles from './Home.module.css';
 
 export default class About extends Component {
     constructor() {
@@ -18,29 +19,29 @@ export default class About extends Component {
     render() {
         return (
             <div className="about">
-                <div className="about__container _container">
-                    <div className="text__decoration">
+                <div className={styles.about__container}>
+                    <div className={styles.text__decoration}>
                         <img src={left} alt={left} />
                         <h1>Об RitmStyle</h1>
                         <img src={right} alt={right} />
                     </div>
-                    <div className="about__content">
-                        <div className="about__item">
-                            <div className="about__text">
+                    <div className={styles.about__content}>
+                        <div className={styles.about__item}>
+                            <div className={styles.about__text}>
                                 <h1>{this.state.types[1]}</h1>
                                 <h2>{this.state.descriptions[1]}</h2>
                             </div>
                             <div>
-                                <div className="about__image">
+                                <div className={styles.about__image}>
                                 </div>
                             </div>
                         </div>
-                        <div className="about__item">
+                        <div className={styles.about__item}>
                             <div>
-                                <div className="about__image">
+                                <div className={styles.about__image}>
                                 </div>
                             </div>
-                            <div className="about__text">
+                            <div className={styles.about__text}>
                                 <h1>{this.state.types[2]}</h1>
                                 <h2>{this.state.descriptions[1]}</h2>
                             </div>

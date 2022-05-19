@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import './Biography.css';
+import styles from './Biography.module.css';
+import Tablet from './Tablet';
 
-function BiographyPage() {
-    return (
-        <div>
-            <Link to = '/'>Назад</Link>
-            <h1>TEST</h1>
-        </div>
-     );
+export default class BiographyPage extends Component {
+    state = {}
+    render() {
+        return (
+            <div>
+                <div className={styles.wrapper}>
+                    <Link to='/'>Назад</Link>
+                    <Tablet/>
+                </div>
+            </div>
+        );
+    }
 }
-
-export default BiographyPage;
