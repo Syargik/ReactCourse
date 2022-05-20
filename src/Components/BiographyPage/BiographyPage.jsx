@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import styles from './Biography.module.css';
-import Tablet from './Tablet';
+import Table from './Table/Table';
 
 export default class BiographyPage extends Component {
-    state = {}
     render() {
         return (
             <div>
                 <div className={styles.wrapper}>
                     <Link to='/'>Назад</Link>
-                    <Tablet/>
+                    <Table/>
                 </div>
             </div>
         );

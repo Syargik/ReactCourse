@@ -1,7 +1,7 @@
 import React from 'react'
-import location from '../img/carbon_location-filled.png'
-import metro from '../img/metro.png'
-import calendar from '../img/bi_calendar-week-fill.png'
+import location from '../../img/carbon_location-filled.png'
+import metro from '../../img/metro.png'
+import calendar from '../../img/bi_calendar-week-fill.png'
 import styles from './Home.module.css';
 
 export default function Footer() {

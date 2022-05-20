@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import right from '../img/right_color.svg'
-import left from '../img/left_color.svg'
+import right from '../../img/right_color.svg'
+import left from '../../img/left_color.svg'
 import styles from './Home.module.css';
 
 export default class Price extends Component {

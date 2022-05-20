@@ -1,6 +1,6 @@
 import React from 'react'
-import right from '../img/right.svg'
-import left from '../img/left.svg'
+import right from '../../img/right.svg'
+import left from '../../img/left.svg'
 import './Home.css'
 
 export default function Main() {

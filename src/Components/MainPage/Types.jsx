@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import right from '../img/right_color.svg'
-import left from '../img/left_color.svg'
-import typeimg from '../img/type_img.jpg'
+import right from '../../img/right_color.svg'
+import left from '../../img/left_color.svg'
+import typeimg from '../../img/type_img.jpg'
 import styles from './Home.module.css';
 
 
